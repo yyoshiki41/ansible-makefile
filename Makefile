@@ -10,6 +10,10 @@ all: help
 
 help:
 	@echo "Please use 'make <target>' where <target> is one of"
+	@echo "    ls-hostname                    to show all host ips"
+	@echo "    syntax-check                   to run with --syntax-check option"
+	@echo "    lint                           to lint playbook files"
+	@echo "    galaxy-install                 to install roles using ansible-galaxy"
 	@echo "    vault-dec                      to decrypt secret.yml"
 	@echo "    vault-enc                      to encrypt secret.yml"
 

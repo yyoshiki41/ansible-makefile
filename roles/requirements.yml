@@ -1,0 +1,3 @@
+- src: dev-sec.os-hardening
+  name: os-hardening
+  version: 4.2.0
