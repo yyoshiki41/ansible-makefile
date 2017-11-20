@@ -16,6 +16,8 @@ help:
 	@echo "    galaxy-install                 to install roles using ansible-galaxy"
 	@echo "    vault-dec                      to decrypt secret.yml"
 	@echo "    vault-enc                      to encrypt secret.yml"
+	@echo "    vault-edit                     to edit secret.yml"
+	@echo "    vault-view                     to view secret.yml"
 
 ls-hostname:
 	$(ANSIBLE) all -i hosts -m shell -a "hostname;"
@@ -34,3 +36,9 @@ vault-dec:
 
 vault-enc:
 	$(VAULT) encrypt hosts/group_vars/secret.yml --vault-password-file ./.secret/vault_password
+
+vault-edit:
+	$(VAULT) edit hosts/group_vars/secret.yml --vault-password-file ./.secret/vault_password
+
+vault-view:
+	$(VAULT) view hosts/group_vars/secret.yml --vault-password-file ./.secret/vault_password

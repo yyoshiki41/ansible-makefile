@@ -13,6 +13,8 @@ Please use 'make <target>' where <target> is one of
     galaxy-install                 to install roles using ansible-galaxy
     vault-dec                      to decrypt secret.yml
     vault-enc                      to encrypt secret.yml
+    vault-edit                     to edit secret.yml
+    vault-view                     to view secret.yml
 ```
 
 ## Directory
