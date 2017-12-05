@@ -9,7 +9,7 @@ VAULT=ansible-vault
 all: help
 
 help:
-	@echo "Please use 'make <target>' where <target> is one of"
+	@echo "Make command examples for Ansible"
 	@echo "    ls-hostname                    to show all host ips"
 	@echo "    syntax-check                   to run with --syntax-check option"
 	@echo "    lint                           to lint playbook files"

@@ -6,7 +6,7 @@ This repository contains `Makefile` examples for Ansible Playbooks.
 
 ```bash
 $ make help
-Please use 'make <target>' where <target> is one of
+Make command examples for Ansible
     ls-hostname                    to show all host ips
     syntax-check                   to run with --syntax-check option
     lint                           to lint playbook files
