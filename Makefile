@@ -11,6 +11,7 @@ all: help
 help:
 	@echo "Make command examples for Ansible"
 	@echo "    ls-hostname                    to show all host ips"
+	@echo "    print-vars                     to print out a dictionary of all of the facts"
 	@echo "    syntax-check                   to run with --syntax-check option"
 	@echo "    lint                           to lint playbook files"
 	@echo "    galaxy-install                 to install roles using ansible-galaxy"
@@ -21,6 +22,9 @@ help:
 
 ls-hostname:
 	$(ANSIBLE) all -i hosts -m shell -a "hostname;"
+
+print-vars:
+	$(ANSIBLE) api -i hosts -m setup
 
 syntax-check:
 	$(PLAYBOOK) playbook_dir/*.yml -i hosts --syntax-check
