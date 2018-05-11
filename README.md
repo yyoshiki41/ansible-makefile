@@ -8,6 +8,7 @@ This repository contains `Makefile` examples for Ansible Playbooks.
 $ make help
 Make command examples for Ansible
     ls-hostname                    to show all host ips
+    print-vars                     to print out a dictionary of all of the facts
     syntax-check                   to run with --syntax-check option
     lint                           to lint playbook files
     galaxy-install                 to install roles using ansible-galaxy
